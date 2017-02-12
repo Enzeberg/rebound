@@ -24,7 +24,7 @@ Baffle.prototype.display=function(){
 Baffle.prototype.disappear=function(){
 	var cx=this.cx;
 	cx.strokeStyle=cx.canvas.style.backgroundColor;
-	cx.lineWidth=2*this.thickness;
+	cx.lineWidth=4*this.thickness;
 	cx.beginPath();
 	cx.moveTo(this.start.x, this.start.y);
 	cx.lineTo(this.end.x, this.end.y);
