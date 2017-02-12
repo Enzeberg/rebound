@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Rebound</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="./css/main.css" type="text/css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+	<meta property="og:title" content="Rebound"/>
+	<meta property="og:site_name" content="Rebound"/>
+	<meta property="og:description" content="Rotate the baffle to make the ball go outside."/>
 </head>
 <body>
 	<div class="container">
@@ -60,7 +68,6 @@
 		cx.translate(cv.width/2, cv.height/2);
 		var ballRadius=Math.floor(0.02*cv.width);
 		var game=new Game(ballRadius, cx);
-		// game.init();
 	</script>
 
 </body>
