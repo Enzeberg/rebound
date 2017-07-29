@@ -2,6 +2,7 @@
 --A simple physical game
 
 Control the baffle to change the ball's motion direction. You need to make the ball go outside and be careful not to touch the enemy.
+
 It's an HTML game. <a href="https://enzeberg.github.io/rebound">Play it here!</a>
 
 ## Screenshot
