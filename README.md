@@ -9,7 +9,7 @@ It's an HTML game. <a href="https://enzeberg.github.io/rebound">Play it here!</a
 <img src="./images/screenshot.png">
 
 ## How to play
-#### [for Desktop] 
+#### [for Mobile]
 Tap the <strong>center square area</strong> to rotate the baffle clockwise or anticlockwise.
 #### [for Desktop]
 Press <strong>A or D key</strong> to rotate the baffle clockwise or anticlockwise.
