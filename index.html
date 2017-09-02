@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset = UTF-8">
 	<title>Rebound</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="./css/main.css" type="text/css">
@@ -9,7 +9,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1, user-scalable = no, minimal-ui">
 
 	<meta property="og:title" content="Rebound"/>
 	<meta property="og:site_name" content="Rebound"/>
@@ -34,7 +34,7 @@
 	    </div>
 		<div class="game-container">
 			
-			<canvas class="game-canvas" style="background-color: rgb(238, 228, 218);"></canvas>
+			<canvas class="game-canvas" width = 500 height = 500 style="background-color: rgb(238, 228, 218);"></canvas>
 		</div>
 		<div class="introduction">
 			
@@ -62,13 +62,13 @@
 	<script src="./js/hole.js"></script>
 	<script src="./js/enemy.js"></script>
 	<script>
-		var cv=document.querySelector('canvas');
-		cv.height=cv.width=500;
-		var cx=cv.getContext('2d');
-		cx.translate(cv.width/2, cv.height/2);
-		var ballRadius=Math.floor(0.02*cv.width);
-		var game=new Game(ballRadius, cx);
+	  (function() {
+	    var cv = document.querySelector('canvas');
+	    var cx = cv.getContext('2d');
+	    cx.translate(cv.width / 2, cv.height / 2);
+	    var ballRadius = Math.floor(0.02 * cv.width);
+	    var game = new Game(ballRadius, cx);
+	  })();
 	</script>
-
 </body>
 </html>
