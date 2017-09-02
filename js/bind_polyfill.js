@@ -10,6 +10,7 @@ if (!Function.prototype.bind) {
         fToBind = this,
         fNOP    = function() {},
         fBound  = function() {
+          // console.log('this ', this);
           return fToBind.apply(this instanceof fNOP
                  ? this
                  : oThis,
@@ -25,4 +26,4 @@ if (!Function.prototype.bind) {
     return fBound;
   };
 }
-//from Mozilla Developer Network
+// from Mozilla Developer Network
